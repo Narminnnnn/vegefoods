@@ -1,0 +1,201 @@
+* {
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* header {
+    display: flex;
+    justify-content: center;
+} */
+
+/* up header */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.upMenu {
+    width: 100%;
+    height: 27.8px;
+    background-color: #82ae46 !important;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    /* gap: 10px; */
+    padding-bottom: 0.24rem;
+    padding-top: 0.25rem;
+    align-items: center;
+
+}
+
+.style {
+    display: flex;
+    gap: 10px;
+}
+
+.pstyle {
+    font-size: 11px;
+    width: 100%;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+i {
+    font-size: 11px;
+}
+
+/* downMenu */
+
+
+.downMenu {
+    width: 100%;
+    height: 67px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 0.24rem;
+    padding-top: 0.25rem;
+    align-items: center;
+}
+
+.icon {
+    text-align: left;
+
+    p {
+        font-family: "Poppins", Arial, sans-serif;
+        color: #82ae46;
+        font-weight: 800;
+        font-size: 20px;
+        text-transform: uppercase;
+        transform: 2s;
+        cursor: pointer;
+
+        &:hover {
+            color: black;
+        }
+    }
+}
+
+.menu {
+    ul {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        .blog {
+
+            &:hover {
+                .blogmenu {
+                    display: flex;
+                }
+            }
+
+            .blogmenu {
+                position: absolute;
+                bottom: -14px;
+                left: 798px;
+                z-index: 1;
+                height: 10rem;
+                width: 13rem;
+                padding: 5px;
+                align-items: end;
+                display: none;
+                ;
+
+                ul {
+                    align-items: start;
+                    height: 70%;
+                    width: 65%;
+                    background-color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1px;
+
+                    li {
+                        &:hover {
+                            a {
+                                color: #000000 !important;
+                            }
+                        }
+
+                        a {
+
+                            color: #000000;
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .item {
+            font-family: "Poppins", Arial, sans-serif;
+            font-size: 11px;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-weight: 400;
+            color: #000000;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 1 !important;
+        }
+    }
+}
+
+/* secOne */
+
+.secOne {
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(rgba(0, 0, 1, 0.4), rgba(0, 0, 1, 0.2)), url("https://preview.colorlib.com/theme/vegefoods/images/bg_1.jpg.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.secContainer {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.middleDiv {
+    width: 1110px;
+    height: 428px;
+
+    h2 {
+        font-size: 8vw;
+        color: #fff;
+        line-height: 1.3;
+        font-weight: 400;
+        font-family: "Amatic SC", cursive;
+    }
+
+    span {
+        font-weight: 300;
+        font-size: 12px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        display: inline-block;
+        color: #fff;
+    }
+
+    .view {
+        background: #82ae46;
+        border: 1px solid #82ae46;
+        color: #fff;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+}
