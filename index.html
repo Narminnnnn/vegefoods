@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vegafoods</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,43 +25,57 @@
     <header>
         <div class="container">
             <div class="upMenu ">
-                <div class="phone style">
-                    <i class=" fa-solid fa-phone"></i>
-                    <p class="pstyle">+ 1235 2355 98</p>
-                </div>
-                <div class="email style">
-                    <i class="fa-solid fa-paper-plane"></i>
-                    <p class="pstyle">youremail@email.com</p>
-                </div>
-                <div class="deliver style">
-                    <p class="pstyle">3-5 Business days delivery & Free Returns</p>
+                <div class="styleUpMenu">
+                    <div class="phone style">
+                        <i class=" fa-solid fa-phone"></i>
+                        <p class="pstyle">+ 1235 2355 98</p>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Search...">
+                        <button>
+                            <span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                        </button>
+
+                    </div>
+                    <div class="deliver style">
+                        <p class="pstyle">3-5 Business days delivery & Free Returns</p>
+                    </div>
                 </div>
             </div>
             <div class="downMenu">
-                <div class="icon">
-                    <p>Vegefoods</p>
-                </div>
-                <div class="menu">
-                    <nav>
-                        <ul>
-                            <li><a class="item" href="">home</a></li>
-                            <li class="item blog"><a href="">shop <i class="fa-solid fa-sort-down"></i></a>
-                                <div class="blogmenu">
-                                    <ul>
-                                        <li class="menuBlog"><a href="">shop</a></li>
-                                        <li class="menuBlog"><a href="">whishlist</a></li>
-                                        <li class="menuBlog"><a href=""> single product</a></li>
-                                        <li class="menuBlog"><a href="">card</a></li>
-                                        <li class="menuBlog"><a href="">checkout</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a class="item" href="">about</a></li>
-                            <li><a class="item" href="">blog</a></li>
-                            <li><a class="item" href="">contact</a></li>
-                            <li><a class="item" href=""><i class="fa-solid fa-cart-shopping"></i>[ 0 ]</a></li>
-                        </ul>
-                    </nav>
+                <div class="styleDownMenu">
+                    <div class="icon">
+                        <p>Vegefoods</p>
+                    </div>
+                    <div class="menu">
+                        <nav>
+                            <div class="menu-toggle">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                            <ul>
+                                <li><a class="item" href="">home</a></li>
+                                <li class="item blog"><a href="">shop <i id="toggleBlogMenu"
+                                            class="fa-solid fa-sort-down"></i></a>
+                                    <div class="blogmenu">
+                                        <ul>
+                                            <li class="menuBlog"><a href="">shop</a></li>
+                                            <li class="menuBlog"><a href="">whishlist</a></li>
+                                            <li class="menuBlog"><a href=""> single product</a></li>
+                                            <li class="menuBlog"><a href="">card</a></li>
+                                            <li class="menuBlog"><a href="">checkout</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a class="item" href="">about</a></li>
+                                <li><a class="item" href="">blog</a></li>
+                                <li><a class="item" href="">contact</a></li>
+                                <li><a class="item" href=""><i class="fa-solid fa-cart-shopping"></i>[ 0 ]</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -70,11 +84,26 @@
     <main>
         <section class="secOne">
             <div class="secContainer">
-                <div class="middleDiv">
-                    <h2>We serve Fresh Vegestables & Fruits</h2>
-                    <span>We deliver organic vegetables & fruits</span>
-                   
-                    <button class="view"> View Details</button>
+                <div class="carausel">
+                    <ul>
+                        <li class="slide">
+                            <img src="https://preview.colorlib.com/theme/vegefoods/images/bg_1.jpg.webp" alt="">
+                            <div class="overlay">
+                                <h2>We serve Fresh Vegestables & Fruits</h2>
+                                <p>We deliver organic vegetables & fruits</p>
+                                <button class="view"> View Details</button>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="overlay">
+                                <img src="https://preview.colorlib.com/theme/vegefoods/images/bg_2.jpg.webp" alt="">
+                                <h2>We serve Fresh Vegestables & Fruits</h2>
+                                <p>We deliver organic vegetables & fruits</p>
+                                <button class="view"> View Details</button>
+
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
@@ -83,7 +112,7 @@
     </main>
 
 
-
+<script src="../vegefoods/assets/js/slide.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 
